@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Libro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-header m-2">
+            <h3 class="text-center">Agregar Libro</h3>
+
+        </div>
+        <div class="car-body m-4">
+            <form class="row g-auto " id="formr">
+                <div class="col ">
+                    <label for="titulo" class="form-label">Titulo</label>
+                    <input type="text" placeholder="titulo" name="titulo" id="titulo" class="form-control" autofocus required>
+                </div>
+                <div class="col">
+                    <label for="autor" class="form-label">Autor</label>
+                    <input type="text" placeholder="Autor" name="autor" id="autor" class="form-control " required>
+                </div>
+                <div class="col-md-12">
+                    <label for="cantidad" class="form-label">Cantidad</label>
+                    <input type="text" placeholder="Cantidad" class="form-control" id="cantidad" required>
+                </div>
+                <div class="col">
+                    <label for="categoria" class="form-label">Categoria</label>
+                    <select id="categoria" class="form-select" required>
+                    <option selected>Seleccione...</option>
+                    <option>Novela</option>
+                    <option>cuento</option>
+                    <option>Autobiográficos</option>
+                    <option>Autoayuda</option>
+                    <option>Aventuras</option>
+                    <option>salud</option>
+                    <option>Otros..</option>
+                </select>
+                </div>
+                <div class="col">
+                    <label for="edicion" class="form-label">Edicion</label>
+                    <input type="text" class="form-control" placeholder="Edicion" id="edicion" required>
+
+                </div>
+                <div class="col">
+                    <label for="precio" class="form-label">Precio</label>
+                    <input type="text" class="form-control" placeholder="Precio:$52.00" id="precio" required>
+                </div>
+                <div class="pt-2">
+                    <button class="btn btn-primary" type="submit">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../ui/app.js"></script>
+</body>
+
+</html>

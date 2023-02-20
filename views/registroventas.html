@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de ventas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h3 class="text-center">Registro de ventas del Dia</h3>
+        </div>
+        <div class="card-body m-4">
+            <form class="row g-auto" id="form">
+                <div class="col">
+                    <label for="libro" class="form-label">Nombre del Libro</label>
+                    <input type="text" name="libro" class="form-control" placeholder="Nombre del Libro" id="libro" autofocus required>
+
+                </div>
+                <div class="col">
+                    <label for="cantidad" class="form-label">Cantidad vendida</label>
+                    <input type="text" name="cantidad" class="form-control" placeholder="Cantidad vendida" id="cantidad" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="precio" class="form-label">Precio</label>
+                    <input type="text" class="form-control" name="precio" placeholder="Precio $" id="precio" required>
+                </div>
+                <div class="pt-3">
+                    <button class="btn btn-danger">Registra</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../ui/rventas.js"></script>
+
+</body>
+
+</html>
